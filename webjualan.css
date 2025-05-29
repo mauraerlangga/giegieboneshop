@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ffa4c2;
+    background: linear-gradient(to bottom, #ffa4c2, #c1e7b4);
+}
+.awan {
+    position: absolute;
+    top: 100px;
+    left: -200px;
+    width: 200px;
+    animation: terbang 30s linear infinite;
+}
+@keyframes terbang {
+    0% { left: -200px; }
+    100% { left: 110%; }
+}
+.namatoko{
+    color: #ffe3e6;
+    text-align: start;
+    text-shadow: 1px 1px 1px #e091ac;  
+    text-decoration: none;
+    font-size: 50px;
+    margin-top: 10px;
+}
+.navbartext {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Memastikan item ke kanan */
+    font-size: 35px;
+    width: 100%; /* Ambil seluruh lebar untuk bisa dorong ke kanan */
+    padding-right: 20px;
+}
+.product :hover{
+    color:#ec779e ;
+}
+.addresscontact :hover{
+    color:#ec779e ;
+}
+.addres {
+    display: flex;
+    font-size: 20px;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end; /* Dorong ke kanan */
+    margin-top: -18px;
+    /* Hapus margin-left */
+}
+
+a{
+    color: #ffe3e6;
+    text-align: end;
+    text-shadow: 1px 1px 1px#e091ac;  
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navbar{
+    background-color: #fdb2cb;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 20px;
+    position: sticky;
+    border: 5px solid rgb(247, 163, 191);
+    box-shadow: 20px 1px 4px #e091ac;
+}
+.navbartoko{
+    display: flex;
+    gap: 15px;
+}
+.logo{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.productname{
+    color: #9cd18b;
+    text-align: center;
+    text-shadow: 1px 1px 1px #6b9e5e;
+}
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}   
+
+.products {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.cart {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    border : 1px solid #72ac63;
+    color: #679c59;
+}
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+  
+.product-card .container-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color:#84b474;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    opacity: 0.5;
+}
+
+button:nth-child(1){
+    background-color:#84b474;
+}
+button:nth-child(2){
+    background-color: #ec779e;
+}
+
+.button-pesan:active{
+    opacity: 1;
+    background-color: #84b474;
+}
+.penutup{
+    width: auto;
+    height: 200px;
+    background-color: #fdb2cb;
+    border: 4px solid rgb(247, 163, 191);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 420px;
+    margin-top: 20px;
+    
+}
+.wrap-maps{
+    margin-right: -52px;
+    margin-bottom: 60px;
+}
+.maps :hover{
+    color: #fce5ed;
+}
+.maps-icons{
+    color: #ec779e;
+    padding-left: 20px;
+}
+.wrap-fb{
+    margin-right: -52px;
+}
+.fb :hover{
+    color: #fce5ed;
+}
+.fb-icons{
+    color: #ec779e;
+    padding-left: 20px;
+}
+.text-maps{
+    width: auto;
+    max-width: 240px;
+    padding-right: 80px;
+    padding-top: 80px;
+    padding-left: -12px;
+}
+.pembatas{
+    width: 4px;
+    height: 150px;
+    background-color: rgb(252, 157, 188);;
+    margin-top: 14px;
+}
+.wrap-icons{
+    color: #ec779e;
+    width: 900px;
+    height: 120px;
+    margin-left: 30px;
+}
+.text-icons{
+    margin-left: 50px;
+}
+.icons{
+    display: flex;
+    margin-left: 20px;
+    gap: 15px;
+}
+.icons :hover{
+    color: #fce5ed;
+}
+.color-icons{
+    color: #ec779e;
+    font-size: 55px;
+    padding-top: -40px;
+}
+.color-icons2{
+    color: #ec779e;
+    font-size: 100px;
+    margin-bottom: 70px ;
+}
+.maps{
+    width: 0px;
+    height: 0%;
+}
+.ikon-maps{
+  margin-top : 4px; 
+  padding-left: 10px; 
+}
+.mora{
+    text-decoration: none;
+    color: #e25685;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mora :hover{
+    color: #fce5ed;
+}
+.textfooter{
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .penutup {
+        flex-direction: column;
+        padding-left: 0;
+        height: auto;
+    }
+    .wrap-icons, .wrap-maps, .wrap-fb {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .icons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .color-icons, .color-icons2 {
+        font-size: 40px;
+    }
+}
